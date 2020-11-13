@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <h1>Hello World</h1>
+    <p>I'm hosted with GitHub Pages.</p>
+    <button class="mdc-button foo-button">
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label">Button</span>
+    </button>
+    mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
 </body>
+
 </html>
